@@ -4,6 +4,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    overflow: hidden;
 }
 .btn{
     display: none;
@@ -47,10 +48,10 @@
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px; 
 }
-#show:checked ~ .container{
+/* #show:checked ~ .container{
     display: block;
     
-}
+} */
 .content .clos-btn{
     position: absolute;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -70,9 +71,10 @@
     position: absolute;
     width: 900px;
     height: 550px;
-    top: 16%;
-    left: 15%;
-    transition: 10s ease-in-out;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: 200s ease-in-out;
     border-radius: 18px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
@@ -159,8 +161,9 @@
     position: absolute;
     width: 900px;
     height: 550px;
-    top: 16%;
-    left: 15%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     border-radius: 18px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
