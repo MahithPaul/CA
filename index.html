@@ -7,10 +7,11 @@
 </head>
 
 <body>
-    <input type="checkbox" id="show" class="btn">
-    <label for="show" class="log-btn">Log In</label>
-    <input type="checkbox" id="display" class="btn">
-    <label for="display" class="sign-btn">Sign Up</label>
+    <!-- <input type="radio" name="ch" id="show"  class="btn">
+    <input type="checkbox" id="show" class="close-btn fas fa-times"> -->
+    <label id="act" class="log-btn">Log In</label>
+    <!-- <input type="radio" id="display" name="ch"  class="btn"> -->
+    <label id="dis" class="sign-btn">Sign Up</label>
 
     <div class="container">
         <div class="content">
@@ -19,7 +20,7 @@
             </div>
             <div class="form-place">
                 <form action="#" class="myform">
-                    <label for="show" class="clos-btn fas fa-times"></label>
+                    <label for="show" id="tcs" class="clos-btn fas fa-times"></label>
                     <h2>welcome</h2>
                     <h1>ca firms</h1>
                     <div class="form-area">
@@ -39,6 +40,7 @@
             </div>
         </div>
     </div>
+
     <!-- sig up form -->
     <div class="containr">
         <div class="content-main">
@@ -81,11 +83,29 @@
                 </form>
             </div>
             <div class="text-content">
-                <label for="display" class="close-btn fas fa-times"></label>
+                <label id="sip" class="close-btn fas fa-times"></label>
             </div>
         </div>
     </div>
 
+
+    <script>
+        document.getElementById("act").addEventListener("click",function(){
+            document.querySelector(".container").style.display = "block";
+        })
+        
+        document.getElementById("tcs").addEventListener("click",function(){
+            document.querySelector(".container").style.display = "none";
+        })
+
+        document.getElementById("dis").addEventListener("click",function(){
+            document.querySelector(".containr").style.display = "block";
+        })
+        
+        document.getElementById("sip").addEventListener("click",function(){
+            document.querySelector(".containr").style.display = "none";
+        })
+    </script>
 
 </body>
 
