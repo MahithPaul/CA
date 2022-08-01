@@ -4,20 +4,37 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
-    overflow: hidden;
 }
 header{
-    position: sticky;
+    width: 100%;
+    position: fixed;
     background-color: #003847;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 17% 15px 10%;
+    padding: 10px 16% 10px 9%;
 }
-.image-logo{
-    border-radius: 50%;
+.logo-area{
+    display: flex;
 }
 
+.image-logo{
+    border-radius: 20px;
+    margin: 5px;
+}
+.text-area{
+    padding: 10px;
+}
+.head-name{
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #fff;
+}
+.cheat{
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #fff; 
+}
 .nav-links{
     list-style: none;
     
@@ -40,7 +57,7 @@ header{
 .log-btn{
     right: 100px;
     margin: 40px;
-    padding: 5px;
+    padding: .4rem;
     position: absolute;
     border: 1px solid gray;
     border-radius: 6px;
@@ -50,7 +67,7 @@ header{
 .sign-btn{
     right: -10px;
     margin: 40px;
-    padding: 5px;
+    padding: .4rem;
     position: absolute;
     border: 1px solid gray;
     border-radius: 6px;
@@ -80,32 +97,20 @@ header{
     display: block;
     
 }
-.content .clos-btn{
-    position: absolute;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    padding: .4rem .6rem;
-    border-radius: 50%;
-    right: 15px;
-    top: 15px;
-    font-size: 1.2rem;
-    color: #003847;
-}
-.content .clos-btn:hover{
-    color: #027a60;
-    cursor: pointer;
-}
+
+/* Log in */
 .container{
     display: none;
-    position: fixed;
+    position:fixed;
     width: 900px;
     height: 550px;
-    top: 54%;
+    z-index: 9;
+    top:54%;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: 200s ease-in-out;
+    transition: 2s ease-in-out;
     border-radius: 18px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 .content{
     width: 900px;
@@ -158,7 +163,8 @@ header{
 .from-group .fas{
     position: relative;
     color: #027a60;
-    left: 43px;
+    top: 2px;
+    left: 44px;
     font-size: 1.2rem;
 }
 .myBtn{
@@ -188,14 +194,14 @@ header{
 .containr{
     display: none;
     position: fixed;
-    width: 550px;
+    width: 600px;
     height: 590px;
-    top: 54%;
+    z-index: 9;
+    top: 56%;
     left: 50%;
     transform: translate(-50%,-50%);
     border-radius: 18px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
 }
 #display:checked ~ .containr{
     display: block;
@@ -216,15 +222,14 @@ header{
     cursor: pointer;
 }
 .content-main{
-    width: 900px;
+    width: 600px;
     height: 600px;
     padding: 2rem;
-    display: grid;
-    grid-template-columns: 2.3fr 1.6fr;
 }
 .myform-1{
     padding: .9rem;
     border-radius: 20px;
+    background-color: #fff;
     margin: 18px;
     box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
 }
@@ -264,7 +269,7 @@ header{
     outline: none;
 }
 .text-down{
-    text-align: right;
+    text-align: center;
     padding: 1.7rem;
     display: flex;
     flex-direction: row;
@@ -275,6 +280,7 @@ header{
     font-size: 17px;
 }
 .text-down button{
+    margin-top: 10px;
     margin-right: 40px;
     width: 120px;
     height: 30px;
