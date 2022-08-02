@@ -12,7 +12,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 16% 10px 9%;
+    padding: 10px 5% 10px 8%;
 }
 .logo-area{
     display: flex;
@@ -41,7 +41,7 @@ header{
 }
 .nav-links li{
     display: inline-block;
-    padding: 0 20px;
+    padding: 0 15px;
 }
 .nav-links li a{
     text-decoration: none;
@@ -54,21 +54,15 @@ header{
 .btn{
     display: none;
 }
-.log-btn{
-    right: 100px;
-    margin: 40px;
+ul li .log-btn{
     padding: .4rem;
-    position: absolute;
     border: 1px solid gray;
     border-radius: 6px;
     background: #003847;
     color: white;
 }
-.sign-btn{
-    right: -10px;
-    margin: 40px;
+li .sign-btn{
     padding: .4rem;
-    position: absolute;
     border: 1px solid gray;
     border-radius: 6px;
     background: #003847;
@@ -103,8 +97,8 @@ header{
     display: none;
     position:fixed;
     width: 900px;
+    margin-top: 10px;
     height: 550px;
-    z-index: 9;
     top:54%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -194,6 +188,7 @@ header{
 .containr{
     display: none;
     position: fixed;
+    margin-top: 18px;
     width: 600px;
     height: 590px;
     z-index: 9;
@@ -300,4 +295,61 @@ header{
     width: 200px;
     height: 900px;
     background-color: red;
+}
+
+/* MOBILE VIEW */
+/* NAV BAR */
+.mobile-hamburger{
+    display: none;
+}
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    font-size: 60px;
+    font-weight: 300;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    padding-left: 30px;
+}
+.overlay-content{
+    position: relative;
+    top: 14%;
+    width: 100%;
+}
+@media screen  and (max-width: 450px){
+    .mobile-hamburger{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    .overlay a{
+        font-size: 20px;
+    }
+    .image-logo{
+        width: 60px;
+        height: 50px;
+    }
+    .logo-area{
+        font-size: .88rem;
+    }
+    
 }
