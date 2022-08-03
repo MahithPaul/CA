@@ -329,9 +329,10 @@ section{
 .hero{
     width: 100%;
     height: 100%;
+    
 }
 .type{
-    padding: 20px;
+    padding: 10px;
     width: 100%;
     height: 100%;
     display: grid;
@@ -605,6 +606,9 @@ footer{
     line-height: 1;
     text-decoration: none;
 }
+.col-1f ul li a:hover{
+    color: aquamarine;
+}
 .col-1f ul li i{
     padding: 0 15px;
     color: #bebebe;
@@ -639,14 +643,13 @@ footer{
     display: table;
     content: " ";
 }
-footer{
-    display: none;
-}
+
 /* MOBILE VIEW */
 /* NAV BAR */
 .mobile-hamburger{
     display: none;
 }
+
 .overlay{
     display: none;
     height: 100%;
@@ -709,6 +712,9 @@ footer{
 @media screen  and (max-width: 450px){
     .mobile-hamburger{
         display: block;
+    }
+    footer{
+        display: none;
     }
     header nav{
         display: none;
