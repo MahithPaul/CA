@@ -306,6 +306,7 @@ li .sign-btn{
     height: 100%;
     width: 0;
     position: fixed;
+    display: none;
     z-index: 10;
     top: 0;
     left: 0;
@@ -340,6 +341,9 @@ li .sign-btn{
     }
     header nav{
         display: none;
+    }
+    .overlay{
+        display: block;
     }
     .overlay a{
         font-size: 20px;
