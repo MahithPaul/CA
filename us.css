@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 16% 10px 9%;
+    padding: 10px 5% 10px 8%;
 }
 .logo-area{
     display: flex;
@@ -55,21 +55,15 @@ header{
 .btn{
     display: none;
 }
-.log-btn{
-    right: 100px;
-    margin: 40px;
+ul li .log-btn{
     padding: .4rem;
-    position: absolute;
     border: 1px solid gray;
     border-radius: 6px;
     background: #003847;
     color: white;
 }
-.sign-btn{
-    right: -10px;
-    margin: 40px;
+li .sign-btn{
     padding: .4rem;
-    position: absolute;
     border: 1px solid gray;
     border-radius: 6px;
     background: #003847;
@@ -639,4 +633,99 @@ footer{
     clear: both;
     display: table;
     content: " ";
+}
+
+/* MOBILE VIEW */
+/* NAV BAR */
+.mobile-hamburger{
+    display: none;
+}
+.overlay{
+    height: 100%;
+    width: 0;
+    position: fixed;
+    display: none;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+.overlay .closebtn{
+    position: absolute;
+    top: -10px;
+    right: -3px;
+    font-size: 60px;
+    font-weight: 300;
+}
+.overlay a{
+    padding: 8px;
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    padding-left: 30px;
+}
+.overlay-content{
+    position: relative;
+    top: 14%;
+    width: 100%;
+}
+@media screen  and (max-width: 450px){
+    .mobile-hamburger{
+        display: block;
+    }
+    header nav{
+        display: none;
+    }
+    .overlay a{
+        font-size: 20px;
+    }
+    .overlay{
+        display: block;
+    }
+    .image-logo{
+        width: 60px;
+        height: 50px;
+    }
+    .logo-area{
+        font-size: .88rem;
+    }
+    .image-area{
+        width: 375px;
+        height: 250px;
+    }
+    .image-slide h4{
+        font-size: 2rem;
+    }
+    .type{
+        display: flex;
+        flex-direction: column;
+    }
+    .address-head{
+        margin: 20px;
+    }
+    .address-head h4{
+        font-size: 2rem;
+    }
+    .address-head .line-hd{
+        width: 250px;
+    }
+    .text-p p{
+        font-size: 1rem;
+    }
+    .address-main{
+        margin: 15px;
+    }
+    .home p{
+        font-size: .88rem;
+    }
+    .main-text{
+        width: 700px;
+    }
+    .footer-down{
+        width: 700px;
+    }
 }
